@@ -1,0 +1,21 @@
+{
+  "name": "config_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-lint":"node index.js && eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cstylefly/config_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cstylefly/config_test/issues"
+  },
+  "homepage": "https://github.com/Cstylefly/config_test#readme"
+}
