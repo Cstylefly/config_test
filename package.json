@@ -5,7 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-lint":"node index.js && eslint *.js"
+    "start-lint": "node index.js && eslint *.js",
+    "style": "stylelint \"*.(vue|scss|css)\" --fix"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commot":"lint-staged"
+    }
+  },
+  "lint-staged":{
+    "*.{css,less}":[
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -17,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/Cstylefly/config_test/issues"
   },
-  "homepage": "https://github.com/Cstylefly/config_test#readme"
+  "homepage": "https://github.com/Cstylefly/config_test#readme",
+  "devDependencies": {
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0"
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+    ],
+  "rules": {
+    "color-hex-case": "upper",
+    "order/properties-order": [
+        "width",
+        "height"
+    ]
+    }
+}
