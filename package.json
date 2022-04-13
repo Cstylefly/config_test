@@ -15,7 +15,7 @@
   },
   "lint-staged":{
     "*.{css,less}":[
-      "stylelint --fix",
+      "stylelint --config  ./.stylelintrc --fix",
       "git add"
     ]
   },
