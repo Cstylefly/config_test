@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-lint": "node index.js && eslint *.js",
+    "start-lint": "eslint src/*.js",
     "style": "stylelint \"*.(vue|scss|css)\" --fix"
   },
   "husky": {
@@ -14,8 +14,8 @@
     }
   },
   "lint-staged": {
-    "src/*.{js}":[
-      "eslint",
+    "src/*.js":[
+      "eslint --fix",
       "git add"
     ],
     "src/*.{css,less}": [
