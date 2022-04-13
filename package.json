@@ -14,11 +14,11 @@
     }
   },
   "lint-staged": {
-    "*.{js}":[
+    "src/*.{js}":[
       "eslint --fix",
       "git add"
     ],
-    "*.{css,less}": [
+    "src/*.{css,less}": [
       "stylelint --fix",
       "git add"
     ]
