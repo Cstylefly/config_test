@@ -8,13 +8,13 @@
     "start-lint": "node index.js && eslint *.js",
     "style": "stylelint \"*.(vue|scss|css)\" --fix"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "*.{css,less}":[
+  "lint-staged": {
+    "*.{css,less}": [
       "stylelint --fix",
       "git add"
     ]
@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/Cstylefly/config_test#readme",
   "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0"
