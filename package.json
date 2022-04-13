@@ -31,8 +31,8 @@
   },
   "homepage": "https://github.com/Cstylefly/config_test#readme",
   "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0"
