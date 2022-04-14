@@ -1,5 +1,2 @@
-console.log("3124")
-
-
-
-console.log("da")
+console.log('3124')
+console.log('da')
