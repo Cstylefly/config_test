@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/*.js",
-    "style": "stylelint \"*.(vue|scss|css)\" --fix"
+    "style": "stylelint \"src/*.(vue|scss|css)\" --fix",
+    "format":"prettier --write src/*.{js,css}"
   },
   "husky": {
     "hooks": {
@@ -16,10 +17,12 @@
   "lint-staged": {
     "src/*.js": [
       "eslint --fix",
+      "prettier --write",
       "git add"
     ],
     "src/*.{css,less}": [
       "stylelint --fix",
+      "prettier --write",
       "git add"
     ]
   },
@@ -36,9 +39,12 @@
   "homepage": "https://github.com/Cstylefly/config_test#readme",
   "devDependencies": {
     "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "glob": "^8.0.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0"

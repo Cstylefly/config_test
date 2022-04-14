@@ -8,6 +8,7 @@
     "order/properties-order": [
         "width",
         "height"
-    ]
+    ],
+    "max-empty-lines": 0
     }
 }

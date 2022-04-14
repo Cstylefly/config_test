@@ -4,7 +4,11 @@ module.exports = {
         "es2021": true,
         "node":true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "prettier"
+    ],
+    "plugins":["prettier"],
     "parserOptions": {
         "ecmaVersion": "2018",
         "sourceType": "module"
@@ -14,5 +18,7 @@ module.exports = {
             "error",
             "single"
         ],
+        "prettier/prettier":"error",
+        "no-unused-vars":0
     }
 }
