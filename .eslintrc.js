@@ -19,6 +19,7 @@ module.exports = {
             "single"
         ],
         "prettier/prettier":"error",
-        "no-unused-vars":0
+        "no-unused-vars":0,
+        "no-console":["error","warn"]
     }
 }
