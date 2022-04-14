@@ -35,10 +35,10 @@
   },
   "homepage": "https://github.com/Cstylefly/config_test#readme",
   "devDependencies": {
-    "eslint": "^6.5.1",
+    "eslint": "^8.13.0",
     "glob": "^8.0.1",
     "husky": "^3.0.1",
-    "lint-staged": "^9.2.1",
+    "lint-staged": "^10.5.3",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0"
